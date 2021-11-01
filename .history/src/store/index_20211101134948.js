@@ -45,9 +45,8 @@ export default new Vuex.Store({
       context.commit('updateDeletedTodoItems', currentTodo)
     },
     restoreTodoItem(context, payload) {
-      const currentTodo = context.state.deletedTodoItems.find(item => item.id === payload)
-      context.commit('updateTodoItems', currentTodo),
-      context.commit('removeDeletedItems', payload)
+      const currentTodo = context.getters.getTodoById(payload),
+
     }
   },
   modules: {

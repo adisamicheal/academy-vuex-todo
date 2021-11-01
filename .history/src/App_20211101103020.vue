@@ -18,15 +18,12 @@ export default {
 </script>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
 }
 
 #nav {
@@ -40,14 +37,5 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #42b983;
-}
-.active-button {
-  background: #42b983;
-  color: #fff;
-  font-size: 18px;
-  padding: 10px 20px;
-  border: 1px solid #42b983;
-  border-radius: 20px;
-  margin-top: 20px;
 }
 </style>

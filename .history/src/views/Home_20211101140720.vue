@@ -37,7 +37,7 @@ export default {
 </script>
 
 <style scoped>
-.heading {
+h3 {
   text-align: center;
   padding: 50px 0;
 }

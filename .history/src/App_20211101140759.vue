@@ -48,6 +48,5 @@ export default {
   padding: 10px 20px;
   border: 1px solid #42b983;
   border-radius: 20px;
-  margin-top: 20px;
 }
 </style>

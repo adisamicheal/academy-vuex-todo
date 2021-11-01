@@ -22,11 +22,6 @@ const routes = [
     path: '/add-todo',
     name: 'AddTodo',
     component: () => import(/* webpackChunkName: "about" */ '../views/AddTodo.vue')
-  },
-  {
-    path: '/recycle-bin',
-    name: 'RecycleBin',
-    component: () => import('../views/RecycleBin.vue')
   }
 ]
 

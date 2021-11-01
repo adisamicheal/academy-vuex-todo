@@ -8,7 +8,7 @@
       <div class="todo-card" v-for="todo in getTodoItems" :key="todo.id">
         <h5 class="card-title">{{ todo.activity }}</h5>
         <p class="card-description">{{ todo.description }}</p>
-        <button class="active-button" @click="deleteTodoItem(todo.id)">Delete</button>
+        <button @click="deleteTodoItem(todo.id)">Delete</button>
       </div>
     </div>
   </div>
@@ -37,7 +37,7 @@ export default {
 </script>
 
 <style scoped>
-.heading {
+h3 {
   text-align: center;
   padding: 50px 0;
 }

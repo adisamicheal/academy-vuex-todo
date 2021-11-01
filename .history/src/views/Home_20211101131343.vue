@@ -8,7 +8,7 @@
       <div class="todo-card" v-for="todo in getTodoItems" :key="todo.id">
         <h5 class="card-title">{{ todo.activity }}</h5>
         <p class="card-description">{{ todo.description }}</p>
-        <button class="active-button" @click="deleteTodoItem(todo.id)">Delete</button>
+        <button @click="deleteTodo">Delete</button>
       </div>
     </div>
   </div>
@@ -16,11 +16,11 @@
 
 <script>
 // @ is an alias to /src
-import { mapGetters, mapActions } from 'vuex';
+import { mapGetters } from 'vuex';
 
 export default {
   name: 'Home',
-  data() {
+  dat() {
     return {
       todoItem: {}
     }
@@ -31,13 +31,18 @@ export default {
     ...mapGetters(['getTodoItems'])
   },
   methods: {
-    ...mapActions(['deleteTodoItem']),
+    methods: {
+      ...mapActions(['deleteTodoItem']),
+      deleteTodo() {
+        this.deleteTodoItem(todo.id)
+      }
+    }
   }
 }
 </script>
 
 <style scoped>
-.heading {
+h3 {
   text-align: center;
   padding: 50px 0;
 }
