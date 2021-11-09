@@ -1,5 +1,7 @@
 # academy_vuex
 
+A repo i created to teach Enyata Academy 5.0 students Vue State Management (Vuex).
+
 ## Project setup
 ```
 npm install
